@@ -1,0 +1,10 @@
+grammar org.xtext.example.mydsl.Java with org.eclipse.xtext.common.Terminals
+
+generate java "http://www.xtext.org/example/mydsl/Java"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
+
